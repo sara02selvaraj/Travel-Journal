@@ -9,7 +9,8 @@ export default function Location(props) {
                 className='img-location' alt="" />
             </div>
             <div className='main--content'>
-                <p><FaPeriscope/>{props.item.location} <span>{props.item.googleMapsUrl}</span></p>
+                <p><FaPeriscope className='main--icon'/><span className='main--location'>{props.item.location} </span>
+                <a href={props.item.googleMapsUrl} className='main--link'>View on Google Maps</a></p>
                 <h1 className='main--title'>{props.item.title}</h1>
                 <p className='main--date'>{props.item.startDate} - {props.item.endDate}</p>
                 <p className='main--text'>{props.item.description}</p>
