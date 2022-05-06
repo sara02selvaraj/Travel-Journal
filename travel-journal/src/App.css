@@ -29,6 +29,7 @@ body {
 .container {
   max-width: 550px;
   margin: auto;
+  border: 1px solid #F5F5F5;
 }
 
 .header {
@@ -37,7 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .header--title {
@@ -60,7 +61,7 @@ body {
   grid-template-areas: 
     "image content";
   place-content: center;
-  padding: 18px 0;
+  margin: 18px 40px;
   border-bottom : 1px solid #F5F5F5;
 }
 
@@ -88,4 +89,15 @@ body {
 
 .main--text {
   line-height: 15px;
+}
+.main--icon{
+  color: var(--bg-accent);
+  margin-right:4px;
+}
+.main--location {
+  text-transform: uppercase;
+  margin-right:12px;
+}
+.main--link{
+  color:var(--clr-secondary);
 }
